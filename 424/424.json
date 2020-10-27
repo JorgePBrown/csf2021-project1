@@ -15,8 +15,8 @@
                 },
                 "sink": {
                     "file": "index.js",
-                    "lineno": 60,
-                    "code": "path = rootPath + request.url;"
+                    "lineno": 67,
+                    "code": "content = fs.readFileSync(path).toString();"
                 }
             }
         ],
@@ -45,7 +45,7 @@
             "score": "D"
         },
         "appinspector": {
-            "score": ""
+            "score": "C"
         },
         "eslint": {
             "score": "C"
@@ -54,7 +54,7 @@
             "score": "D"
         },
         "graudit": {
-            "score": "B/C"
+            "score": "C"
         }
     }
 }

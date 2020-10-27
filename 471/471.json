@@ -1,0 +1,60 @@
+{
+    "advisory": {
+        "id": 471,
+        "cwe": "CWE-22"
+    },
+    "correct_cwe": "CWE-22",
+    "correct_package_link": "https://registry.npmjs.org/infraserver/-/infraserver-0.0.1.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "infra.data.js",
+                    "lineno": 32,
+                    "code": "req"
+                },
+                "sink": {
+                    "file": "infra.data.js",
+                    "lineno": 137,
+                    "code": "fs.readFile(realPath, options, function(err, file){ ... })"
+                }
+            }
+        ],
+        "fail_reason": ""
+    },
+    "poc": [
+        {
+            "url": "https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/infraserver"
+        }
+    ],
+    "patch": [],
+    "tools": {
+        "codeql":{
+            "score": "A"
+        },
+        "njsscan":{
+            "score": "C"
+        },
+        "drek": {
+            "score": "D"
+        },
+        "mosca": {
+            "score": "D"
+        },
+        "msdevskim": {
+            "score": "D"
+        },
+        "appinspector": {
+            "score": "C"
+        },
+        "eslint": {
+            "score": "D"
+        },
+        "insidersec": {
+            "score": "D"
+        },
+        "graudit": {
+            "score": "A"
+        }
+    }
+}

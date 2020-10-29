@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "millisecond": "file:../millisecond-0.1.1/package"
+  }
+}

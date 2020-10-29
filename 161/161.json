@@ -9,14 +9,14 @@
         "vulnerability_location": [
             {
                 "source": {
-                    "file": "index.js",
-                    "lineno": 72,
-                    "code": "jwtString"
+                    "file": "install.js",
+                    "lineno": 142,
+                    "code": "res"
                 },
                 "sink": {
-                    "file": "index.js",
-                    "lineno": 113,
-                    "code": "valid = jws.verify(jwtString, secretOrPublicKey);"
+                    "file": "install.js",
+                    "lineno": 150,
+                    "code": "res.pipe(parser(callback));"
                 }
             }
         ],

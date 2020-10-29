@@ -1,0 +1,56 @@
+{
+    "advisory": {
+        "id": 161,
+        "cwe": "CWE-818"
+    },
+    "correct_cwe": "CWE-494",
+    "correct_package_link": "https://registry.npmjs.org/unicode/-/unicode-0.6.1.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "install.js",
+                    "lineno": 142,
+                    "code": "res"
+                },
+                "sink": {
+                    "file": "install.js",
+                    "lineno": 150,
+                    "code": "res.pipe(parser(callback));"
+                }
+            }
+        ],
+        "fail_reason": ""
+    },
+    "poc": [],
+    "patch": [],
+    "tools": {
+        "codeql":{
+            "score": "D"
+        },
+        "njsscan":{
+            "score": "C"
+        },
+        "drek": {
+            "score": "D"
+        },
+        "mosca": {
+            "score": "C"
+        },
+        "msdevskim": {
+            "score": "D"
+        },
+        "appinspector": {
+            "score": "C"
+        },
+        "eslint": {
+            "score": "C"
+        },
+        "insidersec": {
+            "score": "D"
+        },
+        "graudit": {
+            "score": "C"
+        }
+    }
+}

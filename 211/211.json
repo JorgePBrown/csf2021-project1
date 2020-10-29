@@ -1,0 +1,43 @@
+{
+    "advisory": {
+        "id": 211,
+        "cwe": "CWE-818"
+    },
+    "correct_cwe": "CWE-494",
+    "correct_package_link": "https://registry.npmjs.org/bionode-sra/-/bionode-sra-2.0.0.tgz",
+    "vulnerability": {
+        "vulnerability_location": [],
+        "fail_reason": "The vulnerabilty lies in the Makefile where an application is downloaded. This application is then executed in a child process in file lib/bionode-sra.js:98. If a Man in the middle attack is well executed and the attacker makes the user download malware instead of the intended application this library will execute the malware code."
+    },
+    "poc": [],
+    "patch": [],
+    "tools": {
+        "codeql":{
+            "score": "A"
+        },
+        "njsscan":{
+            "score": "C"
+        },
+        "drek": {
+            "score": "D"
+        },
+        "mosca": {
+            "score": "D"
+        },
+        "msdevskim": {
+            "score": "C"
+        },
+        "appinspector": {
+            "score": "C"
+        },
+        "eslint": {
+            "score": "D"
+        },
+        "insidersec": {
+            "score": "D"
+        },
+        "graudit": {
+            "score": "C"
+        }
+    }
+}

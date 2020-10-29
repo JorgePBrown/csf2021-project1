@@ -1,0 +1,56 @@
+{
+    "advisory": {
+        "id": 211,
+        "cwe": "CWE-818"
+    },
+    "correct_cwe": "CWE-494",
+    "correct_package_link": "https://registry.npmjs.org/bionode-sra/-/bionode-sra-2.0.0.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "sra/Makefile",
+                    "lineno": 24,
+                    "code": "curl https://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/$(VERSION)/$(@F) -o $@"
+                },
+                "sink": {
+                    "file": "lib/bionode-sra.js",
+                    "lineno": 98,
+                    "code": "var sra = spawn(command, options)"
+                }
+            }
+        ],
+        "fail_reason": ""
+    },
+    "poc": [],
+    "patch": [],
+    "tools": {
+        "codeql":{
+            "score": "A"
+        },
+        "njsscan":{
+            "score": "C"
+        },
+        "drek": {
+            "score": "D"
+        },
+        "mosca": {
+            "score": "D"
+        },
+        "msdevskim": {
+            "score": "C"
+        },
+        "appinspector": {
+            "score": "C"
+        },
+        "eslint": {
+            "score": "D"
+        },
+        "insidersec": {
+            "score": "D"
+        },
+        "graudit": {
+            "score": "C"
+        }
+    }
+}

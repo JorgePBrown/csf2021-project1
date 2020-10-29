@@ -3,7 +3,7 @@
         "id": 161,
         "cwe": "CWE-818"
     },
-    "correct_cwe": "CWE-818",
+    "correct_cwe": "CWE-494",
     "correct_package_link": "https://registry.npmjs.org/unicode/-/unicode-0.6.1.tgz",
     "vulnerability": {
         "vulnerability_location": [

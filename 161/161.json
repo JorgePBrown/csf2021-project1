@@ -1,0 +1,60 @@
+{
+    "advisory": {
+        "id": 161,
+        "cwe": "CWE-818"
+    },
+    "correct_cwe": "CWE-818",
+    "correct_package_link": "https://registry.npmjs.org/unicode/-/unicode-0.6.1.tgz",
+    "vulnerability": {
+        "vulnerability_location": [
+            {
+                "source": {
+                    "file": "index.js",
+                    "lineno": 72,
+                    "code": "jwtString"
+                },
+                "sink": {
+                    "file": "index.js",
+                    "lineno": 113,
+                    "code": "valid = jws.verify(jwtString, secretOrPublicKey);"
+                }
+            }
+        ],
+        "fail_reason": ""
+    },
+    "poc": [],
+    "patch": [
+        {
+            "url": "https://github.com/auth0/node-jsonwebtoken/commit/1bb584bc382295eeb7ee8c4452a673a77a68b687"
+        }
+    ],
+    "tools": {
+        "codeql":{
+            "score": "D"
+        },
+        "njsscan":{
+            "score": "C"
+        },
+        "drek": {
+            "score": "D"
+        },
+        "mosca": {
+            "score": "C"
+        },
+        "msdevskim": {
+            "score": "D"
+        },
+        "appinspector": {
+            "score": "C"
+        },
+        "eslint": {
+            "score": "C"
+        },
+        "insidersec": {
+            "score": "D"
+        },
+        "graudit": {
+            "score": "C"
+        }
+    }
+}
